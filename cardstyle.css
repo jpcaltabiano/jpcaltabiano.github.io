@@ -2,15 +2,24 @@
 
 * { font-family: 'Roboto', sans-serif; line-height:1.2; vertical-align:middle; }
 
+.list {
+	width: 20%;
+    top: 30px;
+}
+
+.break {
+	margin-top: 5px;
+}
+
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    width: 20%;
+    width: 100%;
     border-radius: 5px;
 }
 
 .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 .container {
