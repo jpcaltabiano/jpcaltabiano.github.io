@@ -3,8 +3,9 @@
 * { font-family: 'Roboto', sans-serif; line-height:1.2; vertical-align:middle; }
 
 .list {
-	width: 20%;
-    top: 30px;
+	width: 30%;
+    margin-top: 10%;
+    margin-left: 10%;
 }
 
 .break {
@@ -22,6 +23,6 @@
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
-.container {
+.card-inner {
     padding: 2px 16px;
 }
