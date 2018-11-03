@@ -1,92 +1,204 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<title>Men In Black Project</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  min-width: 250px;
+}
+
+/* Include the padding and border in an element's total width and height */
+* {
+  box-sizing: border-box;
+}
+
+/* Remove margins and padding from the list */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the list items */
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  list-style-type: none;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+  
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+ul li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+/* Darker background-color on hover */
+ul li:hover {
+  background: #ddd;
+}
+
+/* When clicked on, add a background color and strike out text */
+ul li.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+/* Style the close button */
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+/* Style the header */
+.header {
+  background-color: #f44336;
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+}
+
+/* Clear floats after the header */
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the input */
+input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+/* Style the "Add" button */
+.addBtn {
+  padding: 10px;
+  width: 25%;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+
+.addBtn:hover {
+  background-color: #bbb;
+}
+</style>
 </head>
 <body>
-	<br>
-	<div class="container border border-dark">
-		<h1>
-			Men In Black (1997) - Index
-		</h1>
-	</div>
-	<br>
-	<div class="container bg-dark" id="button-row">
-		<br>
-		<div class="row justify-content-center">
-			<div class="col-2">
-				<!-- <a href="index.html"> -->
-					<button type="button" class="btn btn-primary btn-block disabled">Index</button>
-				<!-- </a> -->
-			</div>
-			<div class="col-2">
-				<a href="notes.html">
-					<button type="button" class="btn btn-primary btn-block">Meeting Notes</button>
-				</a>
-			</div>
-			<div class="col-2">
-				<a href="timeline.html">
-					<button type="button" class="btn btn-primary btn-block">Movie Timeline</button>
-				</a>
-			</div>
-			<div class="col-2">
-				<a href="technologies.html">
-					<button type="button" class="btn btn-primary btn-block">Technologies</button>
-				</a>
-			</div>
-			<div class="col-2">
-				<a href="analysis.html">
-					<button type="button" class="btn btn-primary btn-block">Analysis</button>
-				</a>
-			</div>
-			<div class="col-2">
-				<a href="presentation.html">
-					<button type="button" class="btn btn-primary btn-block">Presentation</button>
-				</a>
-			</div>
 
-		</div>
-		<br>
-	</div>
-	<br>
-	<div class="container" style="margin-bottom: 10em;">
-		<div style="display: inline-block;">
-			<div style="float: left; margin-right: 3em;">
-				<h4>Title:</h4>
-				<p>Men in Black</p>
-				<h4>Director:</h4>
-				<p>Barry Sonnenfeld</p>
-				<h4>Distributor:</h4>
-				<p>Colombia Pictures</p>
-				<h4>Year of Release:</h4>
-				<p>1997</p>
-			</div>
-			<img style="width: 50%; height: auto;" src="http://cdn2us.denofgeek.com/sites/denofgeekus/files/styles/main_wide/public/2017/09/tommy-lee-jones-will-smith-men-in-black.jpg?itok=vzJ7e4us">
-		</div>
-		<br>
-		<br>
-		<h3>Synopsis:</h3>
-		<p>They are the best-kept secret in the universe. Working for a highly funded yet unofficial government agency, Kay (Tommy Lee Jones) and Jay (Will Smith) are the Men in Black, providers of immigration services and regulators of all things alien on Earth. While investigating a series of unregistered close encounters, the MIB agents uncover the deadly plot of an intergalactic terrorist who is on a mission to assassinate two ambassadors from opposing galaxies currently in residence in New York City.</p>
-		<h3>IMDB:</h3>
-		<a href="https://www.imdb.com/title/tt0119654/" target="_blank">Men in Black (1997)</a>
-		<h3>Project Overview:</h3>
-		<p>The goal of this project is to analyze the assigned film through a critical lens specific to the topics covered in the Social Implications for Information Processing course at WPI. These topics include:
-			<ul>
-				<li>Networked Communication</li>
-				<li>Intellectual Property</li>
-				<li>Information Privacy</li>
-				<li>Privacy and the Government</li>
-				<li>Computer and Network Security</li>
-				<li>Computer Reliability</li>
-				<li>Work and Wealth</li>
-			</ul>
-			The project includes group work in stages, shown on this website in various places. To conclude the project, the group will present on its findings from the film to the rest of the class. A link to the presentation is on the Presentation tab, found above.
-		</p>
-		<h3>Group Members:</h3>
-		<p>John Bieber, Joseph Caltabiano, Thomas Curtis, Malika Nurbekova</p>
-	</div>
+<div id="myDIV" class="header">
+  <h2 style="margin:5px">My To Do List</h2>
+  <input type="text" id="myInput" placeholder="Title...">
+  <span onclick="newElement()" class="addBtn">Add</span>
+</div>
 
-	
+<ul id="myUL">
+  <li>Hit the gym</li>
+  <li class="checked">Pay bills</li>
+  <li>Meet George</li>
+  <li>Buy eggs</li>
+  <li>Read a book</li>
+  <li>Organize office</li>
+</ul>
+
+<script>
+// Create a "close" button and append it to each list item
+var myNodelist = document.getElementsByTagName("LI");
+var i;
+for (i = 0; i < myNodelist.length; i++) {
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  myNodelist[i].appendChild(span);
+}
+
+// Click on a close button to hide the current list item
+var close = document.getElementsByClassName("close");
+var i;
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function() {
+    var div = this.parentElement;
+    div.style.display = "none";
+  }
+}
+
+// Add a "checked" symbol when clicking on a list item
+var list = document.querySelector('ul');
+list.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'LI') {
+    ev.target.classList.toggle('checked');
+  }
+}, false);
+
+// Create a new list item when clicking on the "Add" button
+function newElement() {
+  var li = document.createElement("li");
+  var inputValue = document.getElementById("myInput").value;
+  var t = document.createTextNode(inputValue);
+  li.appendChild(t);
+  if (inputValue === '') {
+    alert("You must write something!");
+  } else {
+    document.getElementById("myUL").appendChild(li);
+  }
+  document.getElementById("myInput").value = "";
+
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  li.appendChild(span);
+
+  for (i = 0; i < close.length; i++) {
+    close[i].onclick = function() {
+      var div = this.parentElement;
+      div.style.display = "none";
+    }
+  }
+}
+</script>
+
 </body>
-</html> 
+</html>
