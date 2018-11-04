@@ -3,7 +3,16 @@
 * { font-family: 'Roboto', sans-serif; line-height:1.2; vertical-align:middle; }
 
 body {
+	height: 100%;
+    margin: 0;
+}
+
+.bg {
 	background-image: url('ryan-pohanic-13342-unsplash.jpg');
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .list {
