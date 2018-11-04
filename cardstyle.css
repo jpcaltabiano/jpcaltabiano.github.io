@@ -2,6 +2,10 @@
 
 * { font-family: 'Roboto', sans-serif; line-height:1.2; vertical-align:middle; }
 
+body {
+	background-image-image: "/home/joseph/Pictures/ryan-pohanic-13342-unsplash.jpg";
+}
+
 .list {
 	width: 30%;
     margin-top: 20px;
@@ -26,3 +30,12 @@
 .card-inner {
     padding: 2px 16px;
 }
+
+/*
+Card contains title of thing
+Click to expand details, rest of cards below move down to accomodate
+
+
+
+
+*/
